@@ -1,0 +1,298 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.notFound {
+  text-align: center;
+  padding: var(--spacing-2xl);
+}
+
+.header {
+  text-align: center;
+  padding: var(--spacing-lg) 0;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  background: var(--color-primary);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: var(--font-size-3xl);
+  margin: 0 auto var(--spacing-md);
+}
+
+.name {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-gray-800);
+  margin: 0;
+}
+
+.relationship {
+  font-size: var(--font-size-base);
+  color: var(--color-gray-500);
+  margin: var(--spacing-xs) 0 var(--spacing-md);
+  text-transform: capitalize;
+}
+
+.badges {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.bandCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-md);
+  background: linear-gradient(135deg, var(--color-primary-lighter) 0%, var(--color-white) 100%);
+  border: 1px solid var(--color-primary-light);
+}
+
+.bandInfo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.bandIcon {
+  color: var(--color-primary-dark);
+}
+
+.bandTitle {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--color-gray-800);
+  margin: 0;
+}
+
+.bandSerial,
+.bandText {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-500);
+  margin: 0;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sectionTitle {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-gray-800);
+  margin: 0;
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.infoItem:last-child {
+  border-bottom: none;
+}
+
+.infoIcon {
+  color: var(--color-gray-400);
+  flex-shrink: 0;
+}
+
+.infoIcon.warning {
+  color: var(--color-warning);
+}
+
+.infoIcon.error {
+  color: var(--color-error);
+}
+
+.infoLabel {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-500);
+  min-width: 100px;
+}
+
+.infoValue {
+  font-size: var(--font-size-base);
+  color: var(--color-gray-800);
+  flex: 1;
+  text-align: right;
+}
+
+.address {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.address p {
+  margin: 0;
+  color: var(--color-gray-700);
+  font-size: var(--font-size-sm);
+  line-height: 1.5;
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.contactCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-md);
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactName {
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  color: var(--color-gray-800);
+}
+
+.contactRelation {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-500);
+}
+
+.contactPhone {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  color: var(--color-primary-dark);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+.privacyCard {
+  padding: var(--spacing-md);
+}
+
+.privacyInfo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-500);
+  margin: 0 0 var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.privacyList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.privacyLabel {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.actions {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg) 0;
+  border-top: 1px solid var(--color-gray-100);
+}
+
+.actions > * {
+  flex: 1;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.modalText {
+  color: var(--color-gray-600);
+  margin: 0;
+}
+
+.noBands {
+  text-align: center;
+  padding: var(--spacing-xl);
+}
+
+.noBandsIcon {
+  color: var(--color-gray-300);
+  margin-bottom: var(--spacing-md);
+}
+
+.noBands p {
+  color: var(--color-gray-500);
+  margin: 0 0 var(--spacing-lg);
+}
+
+.bandList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.bandOption {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  cursor: pointer;
+  color: var(--color-primary-dark);
+}
+
+.bandOptionSerial {
+  font-weight: 600;
+  color: var(--color-gray-800);
+  margin: 0;
+}
+
+.bandOptionId {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-500);
+  margin: 0;
+}
+
+.deleteText {
+  color: var(--color-gray-600);
+  margin: 0;
+}
+
+.deleteActions {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: flex-end;
+  padding-top: var(--spacing-md);
+}

@@ -1,0 +1,186 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  padding-bottom: var(--spacing-xl);
+}
+
+.welcome {
+  padding: var(--spacing-sm) 0;
+}
+
+.greeting {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-gray-800);
+  margin: 0 0 var(--spacing-xs);
+}
+
+.subGreeting {
+  font-size: var(--font-size-base);
+  color: var(--color-gray-500);
+  margin: 0;
+}
+
+/* Summary Bar */
+.summaryBar {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-sm) 0;
+}
+
+.summaryItem {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-600);
+  font-weight: 500;
+}
+
+.summaryItem svg {
+  color: var(--color-primary);
+}
+
+/* Feature Grid */
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+}
+
+.featureCard {
+  padding: var(--spacing-lg);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing-md);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-height: 160px;
+}
+
+.featureCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.featureCard:active {
+  transform: translateY(0);
+}
+
+.featureIcon {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featureContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.featureLabel {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-gray-800);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.featureDescription {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-500);
+  margin: 0;
+}
+
+.featureBadge {
+  margin-top: var(--spacing-xs);
+}
+
+/* Make the last card (Visible on Band) span full width when odd */
+.featureGrid .featureCard:nth-child(5) {
+  grid-column: 1 / -1;
+  flex-direction: row;
+  text-align: left;
+  min-height: auto;
+  padding: var(--spacing-md) var(--spacing-lg);
+}
+
+.featureGrid .featureCard:nth-child(5) .featureIcon {
+  width: 56px;
+  height: 56px;
+}
+
+.featureGrid .featureCard:nth-child(5) .featureContent {
+  align-items: flex-start;
+  flex: 1;
+}
+
+/* Empty State Cards */
+.emptyCard {
+  padding: var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--color-primary-lighter) 0%, var(--color-white) 100%);
+  border: 2px dashed var(--color-primary-light);
+}
+
+.emptyCard:hover {
+  border-color: var(--color-primary);
+}
+
+.emptyIcon {
+  width: 48px;
+  height: 48px;
+  background: var(--color-primary);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+}
+
+.emptyContent {
+  flex: 1;
+}
+
+.emptyContent h3 {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--color-gray-800);
+  margin: 0 0 var(--spacing-xs);
+}
+
+.emptyContent p {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-500);
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 360px) {
+  .featureCard {
+    padding: var(--spacing-md);
+    min-height: 140px;
+  }
+
+  .featureIcon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .featureIcon svg {
+    width: 28px;
+    height: 28px;
+  }
+}

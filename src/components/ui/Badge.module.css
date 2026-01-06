@@ -1,0 +1,76 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+}
+
+/* Variants */
+.default {
+  background: var(--color-gray-100);
+  color: var(--color-gray-700);
+}
+
+.primary {
+  background: var(--color-primary-lighter);
+  color: var(--color-primary-dark);
+}
+
+.success {
+  background: var(--color-success-light);
+  color: var(--color-success);
+}
+
+.warning {
+  background: var(--color-warning-light);
+  color: var(--color-warning);
+}
+
+.error {
+  background: var(--color-error-light);
+  color: var(--color-error);
+}
+
+.info {
+  background: var(--color-info-light);
+  color: var(--color-info);
+}
+
+/* Blood group variants */
+.blood-a {
+  background: #FDEDEC;
+  color: var(--color-blood-a);
+}
+
+.blood-b {
+  background: #EBF5FB;
+  color: var(--color-blood-b);
+}
+
+.blood-ab {
+  background: #F5EEF8;
+  color: var(--color-blood-ab);
+}
+
+.blood-o {
+  background: #E9F7EF;
+  color: var(--color-blood-o);
+}
+
+/* Sizes */
+.sm {
+  padding: 2px var(--spacing-sm);
+  font-size: var(--font-size-xs);
+}
+
+.md {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-sm);
+}
+
+.lg {
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-base);
+}

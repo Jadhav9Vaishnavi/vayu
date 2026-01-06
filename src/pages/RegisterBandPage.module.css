@@ -1,0 +1,182 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+}
+
+.iconWrapper {
+  width: 80px;
+  height: 80px;
+  background: var(--color-primary-lighter);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary-dark);
+  margin: 0 auto var(--spacing-lg);
+}
+
+.title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-gray-800);
+  margin: 0 0 var(--spacing-sm);
+}
+
+.subtitle {
+  font-size: var(--font-size-base);
+  color: var(--color-gray-500);
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  color: var(--color-gray-400);
+  font-size: var(--font-size-sm);
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--color-gray-200);
+}
+
+.helpCard {
+  padding: var(--spacing-md);
+}
+
+.helpCard h4 {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-gray-700);
+  margin: 0 0 var(--spacing-xs);
+}
+
+.helpCard p {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-500);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.helpCard ul {
+  margin: var(--spacing-sm) 0 0;
+  padding-left: var(--spacing-lg);
+}
+
+.helpCard li {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-500);
+  font-family: monospace;
+}
+
+.serialCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-md);
+  background: var(--color-primary-lighter);
+  border: 1px solid var(--color-primary-light);
+}
+
+.serialLabel {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-600);
+}
+
+.serialValue {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  font-family: monospace;
+}
+
+.errorCard {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  background: var(--color-error-light);
+  color: var(--color-error);
+  font-size: var(--font-size-sm);
+}
+
+.success {
+  text-align: center;
+  padding: var(--spacing-xl) 0;
+}
+
+.successIcon {
+  width: 80px;
+  height: 80px;
+  background: var(--color-success-light);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-success);
+  margin: 0 auto var(--spacing-lg);
+}
+
+.successTitle {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-gray-800);
+  margin: 0 0 var(--spacing-sm);
+}
+
+.successText {
+  font-size: var(--font-size-base);
+  color: var(--color-gray-500);
+  margin: 0 0 var(--spacing-xl);
+}
+
+.successCard {
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+  text-align: left;
+}
+
+.successDetail {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-sm) 0;
+}
+
+.successDetail:not(:last-child) {
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.detailLabel {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-500);
+}
+
+.detailValue {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-gray-800);
+  font-family: monospace;
+}
+
+.successActions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
