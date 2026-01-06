@@ -1,0 +1,43 @@
+{
+  "name": "vayu",
+  "version": "1.0.0",
+  "description": "Vayu - Family Health & Emergency Contact Profiles linked to RFID wristbands",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server.js",
+    "heroku-postbuild": "npm run build"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/dropouts/vayu.git"
+  },
+  "keywords": [
+    "health",
+    "family",
+    "rfid",
+    "emergency"
+  ],
+  "author": "Vayu Tech Innovations Private Limited",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/dropouts/vayu/issues"
+  },
+  "homepage": "https://gitlab.com/dropouts/vayu#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "lucide-react": "^0.561.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-router-dom": "^7.11.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
+    "vite": "^7.3.0"
+  }
+}
